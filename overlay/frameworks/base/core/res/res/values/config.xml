@@ -181,4 +181,7 @@
     <!-- Device supports LED flashlight -->		
     <bool name="config_enableTorch">true</bool>
 
+    <!-- Enable variable brightness for capacitive buttons -->
+    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
+
 </resources>
