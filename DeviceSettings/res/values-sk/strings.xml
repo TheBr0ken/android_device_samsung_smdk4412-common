@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012-2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Rozšírené nastavenia</string>
+
+    <string name="defaults_button">Obnoviť pôvodné</string>
+
+    <!-- Screen Preference -->
+    <string name="category_screen_title">Obrazovka</string>
+    <string name="screen_colors_title">Farby</string>
+
+    <!-- Content adaptive backlight control -->
+    <string name="cabc_title_head">CABC</string>
+    <string name="cabc_summary_head">Zapne content adaptive backlight control</string>
+
+    <!-- mDNIe -->
+    <string name="mdnie_scenario_title_head">Správa farieb</string>
+    <string name="mdnie_scenario_summary_head">Nastavenia mDNIe správy farieb</string>
+    <string name="mdnie_mode_title_head">Režim</string>
+    <string name="mdnie_mode_summary_head">Nastavenia mDNIe režimu</string>
+    <string name="mdnie_negative_title_head">Negatív</string>
+    <string name="mdnie_negative_summary_head">Zapne/Vypne invertovanie farieb</string>
+
+    <!-- LED -->
+    <string name="led_subcat_title">Oznamovacia LED</string>
+    <string name="led_fade_title_head">Svietenie LED</string>
+    <string name="led_fade_summary_head">Nastaviť plynulé stmievanie alebo blikanie LED.</string>
+
+    <!-- Touchkey tuning -->
+    <string name="touchkey_subcat_title">Dotykové tlačidlá</string>
+    <string name="touchkey_light_title_head">Osvetlenie tlačidiel</string>
+    <string name="touchkey_light_summary_off">Zapnúť osvetlenie</string>
+    <string name="touchkey_light_summary_on">Vypnúť osvetlenie</string>
+    <string name="touchkey_timeout_title_head">Čas osvetlenia</string>
+    <string name="touchkey_timeout_summary_head">Nastaviť dobu osvetlenia dotykových tlačidiel</string>
+
+    <!-- Haptic Preference -->
+    <string name="category_haptic_title">Odozva</string>
+
+    <!-- VibratorTuning -->
+    <string name="vibrator_title">Vibrovanie</string>
+    <string name="vibrator_tuning_title">Sila vibrovania</string>
+    <string name="vibrator_tuning_summary_head">Nastavte silu spätnej vibračnej odozvy</string>
+    <string name="vibrator_warning">Hodnoty vyššie ako %1$d sa nedoporučujú!</string>
+
+    <!-- Radio Preference -->
+    <string name="category_radio_title">Signál</string>
+    <string name="hspa_title_head">HSPA</string>
+    <string name="hspa_summary_head">Výber HSDPA/HSUPA signálu</string>
+
+    <!-- Audio Preference -->
+    <string name="category_audio_title">Zvuk</string>
+    <string name="dockaudio_subcat_title">Zvuk doku</string>
+    <string name="use_dock_audio_title_head">Použiť USB zvuk cez dok</string>
+    <string name="use_dock_audio_summary_head">Aktivuje zvuk cez reproduktory doku</string>
+    <string name="incallaudio_subcat_title">Hlasitosť počas hovoru</string>
+    <string name="incall_earpiece_audio_title_head">Slúchadlo telefónu</string>
+    <string name="incall_headphone_audio_title_head">Slúchadlá</string>
+    <string name="incall_speaker_audio_title_head">Reproduktor</string>
+    <string name="incall_bt_audio_title_head">Bluetooth</string>
+    <string name="incall_warning">Hodnoty vyššie ako %1$d sa nedoporučujú!</string>
+    <string name="audioout_subcat_title">Prehrávanie zvuku</string>
+    <string name="audioout_headphone_audio_title_head">Slúchadlá</string>
+    <string name="audioout_speaker_audio_title_head">Reproduktor</string>
+    <string name="audioout_warning">Hodnoty vyššie ako %1$d sa nedoporučujú!</string>
+
+    <!-- S-Pen -->
+    <string name="spen_subcat_title">S-Pero</string>
+    <string name="spen_power_save_title_head">Šetriaci režim</string>
+    <string name="spen_power_save_summary_head">Vypne akcie stylus, ak je S-Pero zasunuté v zariadení</string>
+
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012-2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="mdnie_scenario_entries">
+        <item>CyanogenMod (pôvodné)</item>
+        <item>UI</item>
+        <item>Video</item>
+        <item>Video teplé</item>
+        <item>Video studené</item>
+        <item>Fotoaparát</item>
+        <item>Navigácia</item>
+        <item>Galéria</item>
+        <item>VT</item>
+    </string-array>
+
+    <string-array name="mdnie_scenario_entries_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="mdnie_mode_entries">
+        <item>Dynamické (pôvodné)</item>
+        <item>Štandardné</item>
+        <item>Prirodzené</item>
+        <item>Film</item>
+    </string-array>
+
+    <string-array name="mdnie_mode_entries_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="mdnie_negative_entries">
+        <item>Normálne</item>
+        <item>Invertované</item>
+    </string-array>
+
+    <string-array name="mdnie_negative_entries_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="touchkey_timeout_entries">
+        <item>Never</item>
+        <item>1 sekunda</item>
+        <item>2 sekundy</item>
+        <item>3 sekundy (pôvodné)</item>
+        <item>4 sekundy</item>
+        <item>5 sekúnd</item>
+        <item>6 sekúnd</item>
+    </string-array>
+
+    <string-array name="touchkey_timeout_entries_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="led_fade_entries">
+        <item>Blikanie</item>
+        <item>Stmievanie</item>
+    </string-array>
+
+    <string-array name="led_fade_entries_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="hspa_entries">
+        <item>UMTS</item>
+        <item>HSDPA</item>
+        <item>HSDPA + HSUPA</item>
+    </string-array>
+
+    <string-array name="hspa_entries_values" translatable="false">
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+</resources>
