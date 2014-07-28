@@ -48,13 +48,4 @@
         <item>Затухание</item>
     </string-array>
 
-    <string-array name="touchkey_timeout_entries">
-        <item>Никогда</item>
-        <item>1 секунда</item>
-        <item>2 секунды</item>
-        <item>3 секунды (По умолч.)</item>
-        <item>4 секунды</item>
-        <item>5 секунд</item>
-        <item>6 секунд</item>
-    </string-array>
 </resources>

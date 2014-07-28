@@ -41,14 +41,9 @@ public class ScreenFragmentActivity extends PreferenceFragment {
     private mDNIeMode mmDNIeMode;
     private mDNIeNegative mmDNIeNegative;
     private LedFade mLedFade;
-    private CheckBoxPreference mTouchKey;
-    private TouchkeyTimeout mTouchKeyTimeout;
 
     private static boolean sSPenSupported;
     private static boolean sTouchkeySupport;
-
-    private static final String FILE_TOUCHKEY_BRIGHTNESS = "/sys/class/sec/sec_touchkey/brightness";
-    private static final String FILE_TOUCHKEY_DISABLE = "/sys/class/sec/sec_touchkey/force_disable";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -76,19 +71,6 @@ public class ScreenFragmentActivity extends PreferenceFragment {
         mLedFade = (LedFade) findPreference(DeviceSettings.KEY_LED_FADE);
         mLedFade.setEnabled(LedFade.isSupported());
 
-        /* Touchkey */
-        sTouchkeySupport = res.getBoolean(R.bool.has_touchkey);
-        mTouchKey = (CheckBoxPreference)preferenceScreen.findPreference(DeviceSettings.KEY_TOUCHKEY_LIGHT);
-        mTouchKey.setEnabled(sTouchkeySupport);
-
-        mTouchKeyTimeout = (TouchkeyTimeout)preferenceScreen.findPreference(DeviceSettings.KEY_TOUCHKEY_TIMEOUT);
-
-        if (mTouchKey.isChecked() && mTouchKey.isEnabled()) {
-            mTouchKeyTimeout.setEnabled(mTouchKeyTimeout.isSupported());
-        } else {
-            mTouchKeyTimeout.setEnabled(false);
-        }
-
         /* S-Pen */
         String spenFilePath = res.getString(R.string.spen_sysfs_file);
         sSPenSupported = SPenPowerSavingMode.isSupported(spenFilePath);
@@ -99,35 +81,8 @@ public class ScreenFragmentActivity extends PreferenceFragment {
         }
     }
 
-    @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-
-        String key = preference.getKey();
-        Log.w(TAG, "key: " + key);
-
-        if (key.compareTo(DeviceSettings.KEY_TOUCHKEY_LIGHT) == 0) {
-            if (((CheckBoxPreference)preference).isChecked()) {
-                Utils.writeValue(FILE_TOUCHKEY_DISABLE, "0");
-                Utils.writeValue(FILE_TOUCHKEY_BRIGHTNESS, "1");
-                mTouchKeyTimeout.setEnabled(mTouchKeyTimeout.isSupported());
-            } else {
-                Utils.writeValue(FILE_TOUCHKEY_DISABLE, "1");
-                Utils.writeValue(FILE_TOUCHKEY_BRIGHTNESS, "2");
-                mTouchKeyTimeout.setEnabled(false);
-            }
-        }
-        return true;
-    }
-
     public static boolean isSupported(String FILE) {
         return Utils.fileExists(FILE);
     }
 
-    public static void restore(Context context) {
-        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
-        boolean light = sharedPrefs.getBoolean(DeviceSettings.KEY_TOUCHKEY_LIGHT, true);
-
-        Utils.writeValue(FILE_TOUCHKEY_DISABLE, light ? "0" : "1");
-        Utils.writeValue(FILE_TOUCHKEY_BRIGHTNESS, light ? "1" : "2");
-    }
 }

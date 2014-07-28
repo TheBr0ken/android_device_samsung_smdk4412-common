@@ -33,12 +33,6 @@
     <string name="led_subcat_title">Notificação com LED</string>
     <string name="led_fade_title_head">Desvanecimento LED</string>
     <string name="led_fade_summary_head">Ativar desvanecimento suave do LED em vez de piscar.</string>
-    <string name="touchkey_subcat_title">Teclas sensíveis ao toque</string>
-    <string name="touchkey_light_title_head">Luz de fundo</string>
-    <string name="touchkey_light_summary_off">Ativar luz de fundo</string>
-    <string name="touchkey_light_summary_on">Desativar luz de fundo</string>
-    <string name="touchkey_timeout_title_head">Tempo limite da luz de fundo</string>
-    <string name="touchkey_timeout_summary_head">Define o tempo limite para a luz de fundo</string>
     <string name="hspa_title_head">HSPA</string>
     <string name="category_audio_title">Áudio</string>
     <string name="dockaudio_subcat_title">Áudio do dock</string>

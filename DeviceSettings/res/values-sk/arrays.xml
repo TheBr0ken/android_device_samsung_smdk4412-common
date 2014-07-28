@@ -62,16 +62,6 @@
         <item>1</item>
     </string-array>
 
-    <string-array name="touchkey_timeout_entries">
-        <item>Never</item>
-        <item>1 sekunda</item>
-        <item>2 sekundy</item>
-        <item>3 sekundy (pôvodné)</item>
-        <item>4 sekundy</item>
-        <item>5 sekúnd</item>
-        <item>6 sekúnd</item>
-    </string-array>
-
     <string-array name="touchkey_timeout_entries_values" translatable="false">
         <item>0</item>
         <item>1</item>

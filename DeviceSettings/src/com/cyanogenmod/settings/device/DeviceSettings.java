@@ -41,8 +41,6 @@ public class DeviceSettings extends FragmentActivity {
     public static final String KEY_MDNIE_MODE = "mdnie_mode";
     public static final String KEY_MDNIE_NEGATIVE = "mdnie_negative";
     public static final String KEY_LED_FADE = "led_fade";
-    public static final String KEY_TOUCHKEY_LIGHT = "touchkey_light";
-    public static final String KEY_TOUCHKEY_TIMEOUT = "touchkey_timeout";
     public static final String KEY_HSPA = "hspa";
     public static final String KEY_USE_DOCK_AUDIO = "dock_audio";
     public static final String KEY_CATEGORY_SPEN = "category_spen";
