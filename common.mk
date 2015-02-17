@@ -77,11 +77,6 @@ PRODUCT_PACKAGES := \
     macloader \
     tinymix
 
-ifneq ($(TARGET_HAS_CAM_FLASH) ,false)
-PRODUCT_PACKAGES += \
-    Torch
-endif
-
 # MFC API
 PRODUCT_PACKAGES += \
     libsecmfcdecapi \
